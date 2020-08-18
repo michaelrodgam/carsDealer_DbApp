@@ -1,0 +1,45 @@
+/*I'm will not use bootstrap or too much css in this project
+but just a little for responsive design*/
+
+/*Mobile*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: black;
+    color: whitesmoke;
+    margin: 10px;
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-shadow: 2px 1px 1px yellowgreen;
+}
+
+.row{
+    margin: 0px 70px;
+    padding: 15px 0px;
+}
+
+/*Flash messages*/
+.success{
+    padding: 10px;
+    border-bottom: 1px dotted green;
+    color: green;
+    text-shadow: 2px 1px 1px white;
+}
+
+.error{
+    padding: 10px;
+    border-bottom: 1px dotted red;
+    color: red;
+    text-shadow: 1px 1px 1px white;
+}
+
+/*Desktop*/
+@media only screen and (max-width: 720px) {
+
+}

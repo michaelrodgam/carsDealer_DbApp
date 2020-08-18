@@ -1,0 +1,11 @@
+/*Here are the queries for MySQL database CarDealer*/
+
+CREATE DATABASE misc;
+GRANT ALL ON misc.* TO 'michael'@'127.0.0.1' IDENTIFIED BY 'zap';
+
+CREATE TABLE autos (
+    auto_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    make VARCHAR(128),
+	year INTEGER,
+	mileage INTEGER
+);
