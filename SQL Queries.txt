@@ -2,6 +2,7 @@
 
 CREATE DATABASE misc;
 GRANT ALL ON misc.* TO 'michael'@'127.0.0.1' IDENTIFIED BY 'zap';
+GRANT ALL ON misc.* TO 'michael'@'localhost' IDENTIFIED BY 'zap';
 
 CREATE TABLE autos (
     auto_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,

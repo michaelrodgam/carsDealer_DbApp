@@ -1,6 +1,7 @@
 <!--Model-->
 <?php 
-session_start();
+    
+    session_start();
 
 ?>
 
@@ -13,7 +14,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./styles/styles.css">
 
-    <title>Michael Rodriguez</title>
+    <title>Michael Rodríguez Gamboa</title>
 </head>
 
 <body>
@@ -29,7 +30,7 @@ session_start();
     }
     else{
         $href = "login.php";
-        $name = "Please Login";
+        $name = "Please Log In";
     }
    echo(
        '<div class="row">

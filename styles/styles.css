@@ -10,7 +10,7 @@ but just a little for responsive design*/
 body{
     background-color: black;
     color: whitesmoke;
-    margin: 10px;
+    margin: 20px;
     text-align: center;
 }
 
@@ -20,8 +20,7 @@ a{
 }
 
 .row{
-    margin: 0px 70px;
-    padding: 15px 0px;
+    margin: 20px 0px;
 }
 
 /*Flash messages*/
@@ -39,7 +38,27 @@ a{
     text-shadow: 1px 1px 1px white;
 }
 
+ul{
+    padding: 10px;
+}
+
+li{
+    margin: 1em 0px;
+}
+
 /*Desktop*/
-@media only screen and (max-width: 720px) {
+@media only screen and (min-width: 768px) {
+    ul{
+        grid-template-columns: auto 500px auto;
+        
+    }
+
+    li{
+        grid-column-start: 2;
+        margin: 0px auto;
+        margin-bottom: 1em;
+        max-width: 430px;
+
+    }
 
 }

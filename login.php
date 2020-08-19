@@ -3,30 +3,29 @@
     session_start();
 
     //checking if there is no missing data in the post request.
-    if(isset($_POST["email"]) && isset($_POST["pass"])){
+    if(isset($_POST["who"]) && isset($_POST["pass"])){
 
         //check if the email has "@"
-        if(strpos($_POST["email"], "@")){
+        if(strpos($_POST["who"], "@")){
 
             //check for the correct password
             if($_POST["pass"] == "php123"){
                 //succesful redirect to autos
                 $_SESSION["success"] = "Login Sucessfull";
-                $_SESSION["name"] = $_POST["email"];
-                error_log("Login success ".$_POST["email"]);
-                header("location: autos.php?name=".urlencode($_POST["email"]));
-                return;
+                $_SESSION["name"] = $_POST["who"];
+                error_log("Login success ".$_POST["who"]);
+                header("location: autos.php?name=".urlencode($_POST["who"]));
             }
             else{
                 $_SESSION["error"] = "Incorrect password";
-                error_log("Login fail ".$_POST["email"]." ".$_POST["pass"]);
+                error_log("Login fail ".$_POST["who"]." ".$_POST["pass"]);
                 header("location: login.php");
                 return;
             }
         }
         else{
             $_SESSION["error"] = "Email must have an at-sign (@)";
-            error_log("Login fail ".$_POST["email"]." ".$_POST["pass"]);
+            error_log("Login fail ".$_POST["who"]." ".$_POST["pass"]);
             header("location: login.php");
             return;
         }
@@ -34,7 +33,7 @@
     }
 
     //missing data
-    if(isset($_POST["email"]) && strlen($_POST["email"]) < 4 || isset($_POST["pass"]) && strlen($_POST["pass"]) < 4){
+    if(isset($_POST["who"]) && strlen($_POST["who"]) < 4 || isset($_POST["pass"]) && strlen($_POST["pass"]) < 4){
         $_SESSION["error"] = "Email and password are required";
         header("location: login.php");
         return;
@@ -50,7 +49,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
 
-    <title>Michael Rodriguez</title>
+    <title>Michael Rodríguez Gamboa</title>
 </head>
 
 <body>
@@ -71,8 +70,8 @@
     }
     
     //this is just to welcome the user.
-    if(isset($_SERVER["name"])){
-        echo('<h3 class="row">Welcome '.htmlentities($_SERVER["name"]).'!</h3>');
+    if(isset($_SESSION["name"])){
+        echo('<h3 class="row">Welcome '.htmlentities($_SESSION["name"]).'!</h3>');
     }
     
     ?>
@@ -84,13 +83,13 @@
         <form method="POST">
             <div class="row">
                 <label for="email">E-mail<label>
-                <input id="email" type="text" name="email" placeholder="Enter your E-mail"></input>
+                <input id="email" type="text" name="who" placeholder="Enter your E-mail"></input>
             </div>
             <div class="row">
                 <label for="pass">Password<label>
                 <input id="pass" type="password" name="pass" placeholder="Enter your password"></input>
             </div>
-            <input type="submit" value="Submit" name="Submit"></input>
+            <input type="submit" value="Log In" name="Submit"></input>
 
         </form>
 
@@ -100,7 +99,7 @@
         
         <div class="row">
             <a href="./index.php">BackHome</a>
-        <div>
+        </div>
     </main>
 
 
