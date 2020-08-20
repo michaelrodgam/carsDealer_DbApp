@@ -12,19 +12,25 @@ body{
     color: whitesmoke;
     margin: 20px;
     text-align: center;
+    font-family: Verdana, Tahoma, sans-serif;
 }
 
-a{
+a, h3{
     color: white;
-    text-shadow: 2px 1px 1px yellowgreen;
+    text-shadow: 2px 1px 1px rgb(71, 99, 16);
+    margin: 0 auto;
 }
 
-.row{
-    margin: 20px 0px;
+h3{
+    border-bottom: 1px dotted gray;
+}
+
+.row, form{
+    margin: 20px auto;
 }
 
 /*Flash messages*/
-.success{
+.success, .error{
     padding: 10px;
     border-bottom: 1px dotted green;
     color: green;
@@ -32,10 +38,7 @@ a{
 }
 
 .error{
-    padding: 10px;
-    border-bottom: 1px dotted red;
     color: red;
-    text-shadow: 1px 1px 1px white;
 }
 
 ul{
@@ -46,19 +49,80 @@ li{
     margin: 1em 0px;
 }
 
+table{
+    overflow-x: auto;
+    border: 2px outset rgb(51, 172, 51);
+    margin: 5px auto;
+    text-align: center;
+    
+}
+
+table th, td{
+    /*border: 1px dotted rgb(18, 188, 218);*/
+    padding: 0 20px;
+}
+
+th{
+    color: skyblue;
+    text-shadow: 2px 1px 1px rgb(146, 146, 146);
+}
+
+input[type="submit"], input[type="button"]{
+    margin: 5px;
+    padding: 7px;
+    color: #ff6768;
+    background-color:#263859;
+    border: 1px solid gray;
+    border-radius: 12px;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover{
+    background-color:#324974;
+    border: 1px solid rgb(0, 128, 107);
+}
+
+img{
+    width: 255px;
+    height: 125px;
+    overflow-x: auto;
+    border: 3px ridge #324974;
+    border-radius: 5px;
+}
+
+#imaContainer{
+    background-image: url("../images/CarDealer3.jpg");
+    height: 25%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+#innerContainer{
+    text-align: center;
+    position: absolute;
+    color: white;
+    margin-top: 3px;
+    width: 100%;
+    text-shadow: 2px 2px 2px rgb(18, 21, 36);
+
+}
+
 /*Desktop*/
 @media only screen and (min-width: 768px) {
-    ul{
-        grid-template-columns: auto 500px auto;
-        
+
+    img{
+        width: 450px;
+        height: 250px;
     }
 
-    li{
-        grid-column-start: 2;
-        margin: 0px auto;
-        margin-bottom: 1em;
-        max-width: 430px;
-
+    #innerContainer{
+        text-align: center;
+        position: absolute;
+        color: white;
+        margin-top: 35px;
+        width: 100%;
+        text-shadow: 2px 2px 2px rgb(18, 21, 36);
+    
     }
-
 }

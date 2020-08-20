@@ -10,3 +10,6 @@ CREATE TABLE autos (
 	year INTEGER,
 	mileage INTEGER
 );
+
+ALTER TABLE autos ADD
+    model VARCHAR(255);
