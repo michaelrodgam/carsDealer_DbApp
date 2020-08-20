@@ -1,5 +1,3 @@
-#Car Dealer Database Application.
-
 This is an academic project, part of the "Building Database Applications in PHP" course from University of Michigan, available on Coursera. I will get a certification when I finish this project.
 
 I'm using XAMP (Windows, Apache web server, MySQL database manager and PHP) to build this app.
