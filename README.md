@@ -4,7 +4,7 @@ This is an academic project, part of the "Building Database Applications in PHP"
 
 I'm using XAMP (Windows, Apache web server, MySQL database manager and PHP) to build this app.
 
-20/08/2020. Well, this course was a good practice for me, I have completed it with a score of 96% overall. In the end this project become a CRUD web app, I don't expected that. Anyway it's complete now so I don't thing to work more in it.
+20/08/2020. Well, this course was a good practice for me, I have completed it with a score of 96% overall. In the end this project become a CRUD web app, I don't expected that. Anyway, it's complete now so I will not work in it anymore.
 
 Check my certificate here: 
 
