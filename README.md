@@ -7,3 +7,9 @@ I'm using XAMP (Windows, Apache web server, MySQL database manager and PHP) to b
 Check my certificate here: 
 
 https://coursera.org/share/652d1718d02716f53072852710caeeda
+
+check out the screenshots of this project:
+
+https://github.com/michaelrodgam/carsDealer_DbApp/blob/master/screenshots/2-Index-Read.jpg
+
+https://github.com/michaelrodgam/carsDealer_DbApp/blob/master/screenshots/1-LogIn.jpg
